@@ -3,8 +3,8 @@ from langchain.messages import ToolMessage
 from langgraph.types import Command
 from langchain.tools import tool, ToolRuntime
 
-MONUMENTS_URL = "https://backend-tfg-escuchatuhistoria.onrender.com/api/v1/public/monuments"
-ROUTES_URL = "https://backend-tfg-escuchatuhistoria.onrender.com/api/v1/public/route"
+MONUMENTS_URL = "https://fly.io/apps/backend-tfg/api/v1/public/monuments"
+ROUTES_URL = "https://fly.io/apps/backend-tfg/api/v1/public/route"
 
 
 @tool
