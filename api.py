@@ -10,6 +10,8 @@ from typing import Literal, Optional
 from dotenv import load_dotenv
 from output_classes import FinalOrchestratorOutput
 from monument_state import MonumentState
+from langchain_groq import ChatGroq
+
 from agent_tools import (
     update_monument_state,
     get_monuments,
@@ -19,7 +21,7 @@ from agent_tools import (
 
 load_dotenv()
 
-modelito = ChatGoogleGenerativeAI(model="gemini-3.1-flash-lite-preview", temperature=0)
+modelito = ChatGroq(model="allam-2-7b", temperature=0)
 
 main_agent = create_agent(
     model=modelito,
