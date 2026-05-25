@@ -21,7 +21,7 @@ from agent_tools import (
 
 load_dotenv()
 
-modelito = ChatGroq(model="allam-2-7b", temperature=0)
+modelito = ChatGroq(model="llama-3.3-70b-versatile", temperature=0)
 
 main_agent = create_agent(
     model=modelito,
